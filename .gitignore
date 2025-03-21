@@ -1,0 +1,35 @@
+# 忽略所有编译生成的可执行文件
+# 假设没有后缀的文件为可执行文件
+**/[!.*]  # 忽略所有不带扩展名的文件（隐藏文件除外）
+
+# 忽略编译产生的中间文件和输出文件
+*.o
+*.so
+*.a
+*.out
+*.d
+*.lo
+*.la
+
+# 忽略编译缓存文件
+*.gcno
+*.gcda
+*.gcov
+
+# 忽略编辑器和工具生成的临时文件
+*~
+*.swp
+*.tmp
+# 忽略单独作为git仓库的目录
+C++linux/
+shared_bike/
+# 忽略CMake相关构建目录
+/CMakeFiles/
+/CMakeCache.txt
+/build/
+/cmake_install.cmake
+/Makefile
+
+# 忽略日志文件
+*.log
+
